@@ -41,7 +41,7 @@ line
 comment
 */
 fn main() {
-	println!("Yeah for comments");
+	println!("Yay for comments");
 }
 ```
 
