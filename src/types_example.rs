@@ -28,7 +28,7 @@ pub fn run() {
     string2.push_str(" World!");
 
     // Tuples
-    let tuple = (flag, letter, signed, array, &string2, "Yes it's a tuple");
+    let tuple = (flag, letter, signed, &array, &string2, "Yes it's a tuple");
 
     // Printing Everything
 
