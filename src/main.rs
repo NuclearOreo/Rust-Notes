@@ -12,7 +12,8 @@
 //mod structs;
 //mod enums;
 //mod cli;
-mod types_example;
+//mod types_example;
+mod loop_example;
 
 fn main() {
     //print::run();
@@ -29,5 +30,6 @@ fn main() {
     //structs::run();
     //enums::run();
     //cli::run();
-    types_example::run();
+    //types_example::run();
+    loop_example::run();
 }
