@@ -136,6 +136,7 @@ for i in 1..10 {
 **Note**: When using for loop on vectors or arrays make sure to use the `.iter()` for vectors or arrays so they don't move out of place.
 
 - Example
+  [source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/loop_example.rs)
 
 ```rust
 pub fn main() {
