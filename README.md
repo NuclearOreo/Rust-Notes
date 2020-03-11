@@ -98,6 +98,33 @@ pub fn main() {
 }
 ```
 
+## Loops
+
+There's three types of loop in rust. The first first type is a infinite loop, which takes no condition and will continue to loop until you break out of it. The second type of loop is a while loop, which takes a condition and will end once the condition evaluate to false. The third type of loop is a for loop, while take an iterator and runs through each item in the iterator.
+
+- Infinite Loop
+
+```rust
+let mut count =  0;
+loop {
+	println!("{}", count);
+	count +=  1;
+	if count ==  10 {
+		break;
+	}
+}
+```
+
+- While Loop
+
+```rust
+let mut count = 0;
+while count <= 10 {
+	println!("{}", count);
+	count += 1;
+}
+```
+
 - For Loop
 
 ```rust
@@ -155,7 +182,3 @@ pub fn main() {
 	}
 }
 ```
-
-## Enums
-
-- TO DO
