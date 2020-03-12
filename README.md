@@ -9,7 +9,7 @@ All rust projects will run from a main function. Just like in C/C++ or Java. Var
 - `cargo init`: Intialize a Cargo project in side a floder
 - `cargo new <Path> --bin`: Create new Cargo with a given path
 - `cargo build`: Create build project from source
-- `cargo run`: Build and run project from source
+- `carog run`: Build and run project from source
 - `cargo build --release`: Build project for project
 - `rustc --version`: Returing the version of the rust complier installed
 - `rustc <File Name>`: Compling a specific rust source file
@@ -62,7 +62,7 @@ fn main() {
 - [Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/types_example.rs)
 
 ```rust
-pub fn main() {
+fn main() {
 	// Boolean
 	let flag: bool  =  true;
 
@@ -94,7 +94,7 @@ pub fn main() {
 	string2.push_str(" World!");
 
 	// Tuples
-	let tuple = (flag, letter, signed, &array, &string2, "Yes it's a tuple");
+	let tuple = (flag, letter, signed, array, &string2, "Yes it's a tuple");
 }
 ```
 
@@ -135,12 +135,11 @@ for i in 1..10 {
 
 **Note**: When using for loop on vectors or arrays make sure to use the `.iter()` for vectors or arrays so they don't move out of place.
 
-### Example
-
-- [source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/loop_example.rs)
+- Example
+  [source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/loop_example.rs)
 
 ```rust
-pub fn main() {
+fn main() {
 	// Normal Infinite Loop
 	let mut count = 0;
 	loop {
@@ -183,4 +182,44 @@ pub fn main() {
 		println!("{}", element);
 	}
 }
+```
+
+## Enums / Constants / Tuples
+
+Enums are simple in rust all you have to type is `enum` then name and the curly braces containing the enumerables
+
+- Enum
+
+```rust
+enum Direction {
+	Up,
+	Down,
+	Left,
+	Right
+}
+```
+
+Constant are also simple in rust all you have to do is type `const` followed with a name and the specify the data type
+
+- Constant
+
+```rust
+const NUMBER: u8 = 3;
+```
+
+Tuple are easy to set in rust. All you need is paratheses and any mixture of variables or data types in the in between it. To access the elements in the in the tuples you use the dot operator.
+
+- Tuple
+
+```rust
+let tuple = (1, 2, 3, "one", 'c', [2, 3, 5], ('x', 'y'));
+
+tuple.0; // 1
+tuple.3; // "one"
+tuple.5; // [2, 3, 5]
+(tuple.6).0; // 'x'
+
+// Unpacking Tuple
+
+let (a, b, c, d, e ,f ,g) = (1, 2, 3, "one", 'c', [2, 3, 5], ('x', 'y'));
 ```
