@@ -221,5 +221,5 @@ tuple.5; // [2, 3, 5]
 
 // Unpacking Tuple
 
-let (a, b, c, d, e ,f ,g) = (1, 2, 3, "one", 'c', [2, 3, 5], ('x', 'y'));
+let (a, b, c, d, e, f, g) = (1, 2, 3, "one", 'c', [2, 3, 5], ('x', 'y'));
 ```
