@@ -223,3 +223,34 @@ tuple.5; // [2, 3, 5]
 
 let (a, b, c, d, e, f, g) = (1, 2, 3, "one", 'c', [2, 3, 5], ('x', 'y'));
 ```
+
+## Function / Code Block
+
+To create function in rust you have use the keywork `fn` to create. You can use the the keywork `pub` before the function declaration to it public.
+
+Code blocks are just blocks of code seperated by curly braces that have access to both inside and outside the scope of the block. It isolate itself in a similiar fashion of a function.
+
+- Function
+
+```rust
+fn main() {
+	println!("{}", is_even(30));
+}
+
+fn is_even(num: i32) -> bool {
+	return num % 2 == 0;
+}
+```
+
+- Code Block
+
+```rust
+fn main() {
+	let x = 0;
+	{
+		let y = 10;
+		println!("Printing x and y: {}, {}", x, y);
+	}
+	println!("Can only print x: {}", x);
+}
+```

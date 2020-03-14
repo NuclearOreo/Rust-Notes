@@ -13,7 +13,8 @@
 //mod enums;
 //mod cli;
 //mod types_example;
-mod loop_example;
+//mod loop_example;
+mod function_example;
 
 fn main() {
     //print::run();
@@ -31,5 +32,6 @@ fn main() {
     //enums::run();
     //cli::run();
     //types_example::run();
-    loop_example::run();
+    //loop_example::run();
+    function_example::run();
 }
