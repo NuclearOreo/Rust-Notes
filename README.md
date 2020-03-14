@@ -254,3 +254,9 @@ fn main() {
 	println!("Can only print x: {}", x);
 }
 ```
+
+[Example Source](<[https://github.com/NuclearOreo/Rust-Notes/blob/master/src/function_example.rs](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/function_example.rs)>)
+
+## References - To Do
+
+## Structs - To Do

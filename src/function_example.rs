@@ -24,9 +24,7 @@ fn sort(nums: &mut [i32]) {
     for i in 0..nums.len() {
         for j in i..nums.len() {
             if nums[j] < nums[i] {
-                let temp = nums[j];
-                nums[j] = nums[i];
-                nums[i] = temp;
+                nums.swap(i, j);
             }
         }
     }
