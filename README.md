@@ -350,3 +350,5 @@ for i in 0..arr3.len() {
 	println!("{}", arr3[i]);
 }
 ```
+
+[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/array_example.rs)
