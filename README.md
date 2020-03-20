@@ -322,3 +322,31 @@ struct Color(u8, u8, u8);
 let red = Color(255, 0, 0);
 println!("{}, {}, {}", red.0, red.1, red.2);
 ```
+
+## Arrays
+
+Array are simple enough to use in rust. All have to use the is the normal square brackets to declare and then you iterator through them however you like.
+
+- Declaration Example
+
+```rust
+let arr1 = [1, 2, 3, 4, 5]; // Implicitly Typed
+let arr2: [i32; 2] = [6, 7]; // Explicitly Typed
+let arr3 = ["hello"; 4]; // 4 "hellos" in a array
+```
+
+- Iteration Example
+
+```rust
+for e in arr1.iter() {
+	println!("{}", e);
+}
+
+for (i, e) in arr2.iter().enumerate() {
+	println!("Index: {}, Element: {}", i, e);
+}
+
+for i in 0..arr3.len() {
+	println!("{}", arr3[i]);
+}
+```

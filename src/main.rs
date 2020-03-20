@@ -14,7 +14,8 @@
 //mod cli;
 //mod types_example;
 //mod loop_example;
-mod function_example;
+//mod function_example;
+mod array_example;
 
 fn main() {
     //print::run();
@@ -33,5 +34,6 @@ fn main() {
     //cli::run();
     //types_example::run();
     //loop_example::run();
-    function_example::run();
+    //function_example::run();
+    array_example::run();
 }
