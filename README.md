@@ -352,3 +352,45 @@ for i in 0..arr3.len() {
 ```
 
 [Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/array_example.rs)
+
+## Impl Keyword
+
+`impl` keyword is similiar to the `class` keyword in other language except that in rust used a struct as the contastructor.
+
+```rust
+struct Rectangle {
+	width: u32,
+	height: u32
+}
+
+impl Retangle {
+	fn is_square(&self) -> {
+		return self.width == self.height;
+	}
+}
+```
+
+[Example Source](<[https://github.com/NuclearOreo/Rust-Notes/blob/master/src/impl_example.rs](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/impl_example.rs)>)
+
+## Strings
+
+There's two types of string in rust. The classic primitive string and non-primitive string. The example below will be using the non-primitive since the other string isn't useful.
+
+```rust
+let  mut my_string =  String::from("The coronvirus is destroying the world :(");
+
+println!("{}", my_string.len());
+
+println!("{}", my_string.is_empty());
+
+for token in my_string.split_whitespace() {
+println!("{}", token);
+}
+
+my_string.push_str(" OMG");
+
+println!("{}", my_string);
+```
+
+[Example Source ](<[https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs)>)  
+[Documetation](<[https://doc.rust-lang.org/std/string/struct.String.html](https://doc.rust-lang.org/std/string/struct.String.html)>)
