@@ -16,7 +16,8 @@
 //mod loop_example;
 //mod function_example;
 //mod array_example;
-mod impl_example;
+//mod impl_example;
+mod string_example;
 
 fn main() {
     //print::run();
@@ -37,5 +38,6 @@ fn main() {
     //loop_example::run();
     //function_example::run();
     //array_example::run();
-    impl_example::run();
+    //impl_example::run();
+    string_example::run();
 }

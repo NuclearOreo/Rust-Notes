@@ -16,7 +16,7 @@ impl Retangle {
 pub fn run() {
     let my_ret = Retangle {
         width: 5,
-        height: 10,
+        height: 5,
     };
     my_ret.description();
     println!("{}", my_ret.is_square());
