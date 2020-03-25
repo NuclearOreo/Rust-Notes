@@ -59,7 +59,7 @@ fn main() {
 
 ### Example
 
-- [Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/types_example.rs)
+- [Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/types_example.rs)
 
 ```rust
 fn main() {
@@ -136,7 +136,7 @@ for i in 1..10 {
 **Note**: When using for loop on vectors or arrays make sure to use the `.iter()` for vectors or arrays so they don't move out of place.
 
 - Example
-  [source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/loop_example.rs)
+  [source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/loop_example.rs)
 
 ```rust
 fn main() {
@@ -255,7 +255,7 @@ fn main() {
 }
 ```
 
-[Example Source](<[https://github.com/NuclearOreo/Rust-Notes/blob/master/src/function_example.rs](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/function_example.rs)>)
+[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/function_example.rs)
 
 ## References
 
@@ -351,7 +351,7 @@ for i in 0..arr3.len() {
 }
 ```
 
-[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/array_example.rs)
+[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/array_example.rs)
 
 ## Impl Keyword
 
@@ -370,7 +370,7 @@ impl Retangle {
 }
 ```
 
-[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/impl_example.rs)
+[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/impl_example.rs)
 
 ## Strings
 
@@ -392,7 +392,7 @@ my_string.push_str(" OMG");
 println!("{}", my_string);
 ```
 
-[Example Source ](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs]) <br >
+[Example Source ](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/string_example.rs) <br >
 [Documetation](https://doc.rust-lang.org/std/string/struct.String.html)
 
 ## Triats
