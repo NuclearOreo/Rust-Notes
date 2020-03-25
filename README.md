@@ -370,7 +370,7 @@ impl Retangle {
 }
 ```
 
-[Example Source](<[https://github.com/NuclearOreo/Rust-Notes/blob/master/src/impl_example.rs](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/impl_example.rs)>)
+[Example Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/impl_example.rs)
 
 ## Strings
 
@@ -392,5 +392,5 @@ my_string.push_str(" OMG");
 println!("{}", my_string);
 ```
 
-[Example Source ](<[https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs)>)  
-[Documetation](<[https://doc.rust-lang.org/std/string/struct.String.html](https://doc.rust-lang.org/std/string/struct.String.html)>)
+[Example Source ](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs])
+[Documetation](https://doc.rust-lang.org/std/string/struct.String.html)
