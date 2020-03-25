@@ -9,6 +9,6 @@ fn main() {
     example::traits_example::run();
     example::vector_example::run();
     example::impl_example::run();
-    example::readfile_example::run();
+    example::filestream_example::run();
     example::cli_example::run();
 }
