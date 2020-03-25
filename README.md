@@ -458,3 +458,25 @@ pub  fn  run() {
 ```
 
 [Documentation](https://doc.rust-lang.org/book/ch12-02-reading-a-file.html)
+
+## Command Line Argument
+
+Command line arguments are simple implement in rust using the standard library. All you need to use is `std::env` to get started.
+
+- Example code
+
+```rust
+use std::env;
+
+pub  fn  main() {
+	let args: Vec<String>  = env::args().collect();
+	for arguments in args.iter() {
+	println!("{}", arguments);
+	}
+}
+```
+
+- Example Command
+  `./binary arg1 arg2 arg3`
+
+[Documentation](https://doc.rust-lang.org/std/env/index.html)
