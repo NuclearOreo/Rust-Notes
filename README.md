@@ -435,3 +435,26 @@ my_vec.resize(3, 0);
 ```
 
 [Documentation](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+
+## Read Files
+
+Reading file in rust is simple using the standard library. You just need `std::fs::File` and `std::io::prelude::*` to get started.
+
+- Here an example below
+
+```rust
+use std::fs::File;
+use std::io::prelude::*;
+
+pub  fn  run() {
+	let  mut file = File::open("./file.txt").expect("Can't find file");
+
+	let  mut content =  String::new();
+
+	file.read_to_string(&mut content).expect("Can't read file");
+
+	println!("{}", content);
+}
+```
+
+[Documentation](https://doc.rust-lang.org/book/ch12-02-reading-a-file.html)
