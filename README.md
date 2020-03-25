@@ -392,7 +392,7 @@ my_string.push_str(" OMG");
 println!("{}", my_string);
 ```
 
-[Example Source ](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs])
+[Example Source ](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs]) <br >
 [Documetation](https://doc.rust-lang.org/std/string/struct.String.html)
 
 ## Triats
