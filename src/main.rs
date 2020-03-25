@@ -18,7 +18,8 @@
 //mod array_example;
 //mod impl_example;
 //mod string_example;
-mod traits_example;
+//mod traits_example;
+mod vector_example;
 
 fn main() {
     //print::run();
@@ -41,5 +42,6 @@ fn main() {
     //array_example::run();
     //impl_example::run();
     //string_example::run();
-    traits_example::run();
+    //traits_example::run();
+    vector_example::run();
 }
