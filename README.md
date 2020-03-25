@@ -413,3 +413,25 @@ impl ToString for  Person {
 ```
 
 [Documentation](https://doc.rust-lang.org/rust-by-example/trait.html)
+
+## Vector
+
+Vectors growable arrays in rust, just like in C++. So push, pop and dynamically change an array how every you like. Way more useful than primitive arrays.
+
+- Declaration
+
+```rust
+let vector_1 = Vec![1, 2, 3, 5];
+let vector_2: Vec<i32> = vec![1, 3, 5, 6];
+```
+
+- What you can do
+
+```rust
+my_vec.pop();
+my_vec.push(7);
+my_vec.repeat(4);
+my_vec.resize(3, 0);
+```
+
+[Documentation](https://doc.rust-lang.org/std/vec/struct.Vec.html)
