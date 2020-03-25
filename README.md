@@ -394,3 +394,22 @@ println!("{}", my_string);
 
 [Example Source ](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/string_example.rs])
 [Documetation](https://doc.rust-lang.org/std/string/struct.String.html)
+
+## Triats
+
+Example below is showing how to use the ToString trait for a struct
+
+```rust
+struct  Person {
+	name: String,
+	age: u8,
+}
+
+impl ToString for  Person {
+	fn  to_string(&self) -> String {
+		return  format!("My name is {} and my age is {}", self.name, self.age);
+	}
+}
+```
+
+[Documentation](https://doc.rust-lang.org/rust-by-example/trait.html)
