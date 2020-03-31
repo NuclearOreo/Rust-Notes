@@ -11,4 +11,5 @@ fn main() {
     example::impl_example::run();
     example::filestream_example::run();
     example::cli_example::run();
+    example::pattern_match_example::run();
 }

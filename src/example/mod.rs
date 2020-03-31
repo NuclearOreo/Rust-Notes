@@ -4,6 +4,7 @@ pub mod filestream_example;
 pub mod function_example;
 pub mod impl_example;
 pub mod loop_example;
+pub mod pattern_match_example;
 pub mod string_example;
 pub mod traits_example;
 pub mod types_example;
