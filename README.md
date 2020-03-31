@@ -486,3 +486,22 @@ pub  fn  main() {
   `./binary arg1 arg2 arg3`
 
 [Documentation](https://doc.rust-lang.org/std/env/index.html)
+
+## Pattern Match
+
+The `match` keyword is similar to the `switch` keyword in other languages. Given an input it will run through all the statement untill is matches one of them, normally running down the statement in order that they are written.
+
+- Example Below
+
+```rust
+let number = 2;
+match number {
+	1 => println!("This is a one"), // matches one
+	2 => println!("This a two"), // matches two
+	10  |  11 => println!("This is either a 10 or 11"), // matches either 10 or 11
+	50..=100 => println!("It is within the range of 50 to 100"), // matches within the range of 50 to 100
+	_ => println!("Never seen this number"), // If it does not match anything
+}
+```
+
+The example showcased here is is showing how `match` is setup. The `number` variable will be matched against the statements. The first two statements will match to a specific number. The third will match to two number, 10 and 11 to specifc. The fourth statement will mactch to a range of numbers, 50 to 100. And the last statement is a catch all, will match to anything.
