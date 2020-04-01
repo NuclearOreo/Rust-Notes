@@ -3,6 +3,7 @@ pub mod cli_example;
 pub mod filestream_example;
 pub mod function_example;
 pub mod impl_example;
+pub mod input_example;
 pub mod loop_example;
 pub mod pattern_match_example;
 pub mod string_example;
