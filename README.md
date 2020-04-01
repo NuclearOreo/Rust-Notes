@@ -505,3 +505,26 @@ match number {
 ```
 
 The example showcased here is is showing how `match` is setup. The `number` variable will be matched against the statements. The first two statements will match to a specific number. The third will match to two number, 10 and 11 to specifc. The fourth statement will mactch to a range of numbers, 50 to 100. And the last statement is a catch all, will match to anything.
+
+## Reading Input
+
+Reading user input rust is easy enough with the standard library that is it has. All you to do is import `std::io` and you should be ready to go.
+
+- Example
+
+```rust
+use std::io;
+
+fn  main() {
+	let  mut input =  String::new();
+
+	println!("Please Enter in an input:");
+
+	match io::stdin().read_line(&mut input) {
+		Ok(_) => println!("Here's your input: {}", input),
+		Err(e) => println!("Something went wrong: {}", e),
+	}
+}
+```
+
+[Documentation](https://doc.rust-lang.org/std/io/struct.Stdin.html)
