@@ -569,3 +569,40 @@ fn  main() {
 ```
 
 [Documentation](https://doc.rust-lang.org/nightly/std/collections/struct.HashMap.html)
+
+## Random
+
+Generating random is possible in rust but not of the standard library. To create random numbers you have to get an external crate `rand` to get it.
+
+- Example `Cargo.toml`
+
+```
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["John Doe <johnDoe@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+rand = "0.3"
+```
+
+- Example
+
+```rust
+extern  crate rand;
+use rand::Rng;
+
+fn  main() {
+	// Random Number
+	let random_number = rand::thread_rng().gen_range(1, 11);
+	println!("{}", random_number);
+
+	// Flip a coin
+	let random_bool = rand::thread_rng().gen_weighted_bool(25);
+	println!("Random Bool: {}", random_bool);
+}
+```
+
+[Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/random_number_example.rs)
