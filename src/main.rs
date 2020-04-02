@@ -5,7 +5,6 @@ fn main() {
     example::loop_example::run();
     example::function_example::run();
     example::array_example::run();
-    example::string_example::run();
     example::traits_example::run();
     example::vector_example::run();
     example::impl_example::run();
@@ -15,4 +14,5 @@ fn main() {
     example::input_example::run();
     example::hashmap_example::run();
     example::random_number_example::run();
+    example::string_example::run();
 }
