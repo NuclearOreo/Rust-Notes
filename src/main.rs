@@ -13,4 +13,5 @@ fn main() {
     example::cli_example::run();
     example::pattern_match_example::run();
     example::input_example::run();
+    example::hashmap_example::run();
 }
