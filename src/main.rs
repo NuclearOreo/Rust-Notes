@@ -14,4 +14,5 @@ fn main() {
     example::pattern_match_example::run();
     example::input_example::run();
     example::hashmap_example::run();
+    example::random_number_example::run();
 }
