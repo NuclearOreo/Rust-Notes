@@ -528,3 +528,44 @@ fn  main() {
 ```
 
 [Documentation](https://doc.rust-lang.org/std/io/struct.Stdin.html)
+
+## HashMap
+
+No language is really complete with the ultimate data structure, the hashmap :). It's simple enough to use in rust all you need import it from std/collections to start using it.
+
+- Example
+
+```rust
+use std::collections::HashMap;
+
+fn  main() {
+	let  mut hashmap = HashMap::new();
+
+	// Inserting into hashmap
+	hashmap.insert("Rust Programming", 90);
+	hashmap.insert("Web Dev", 91);
+	hashmap.insert("UX/UI Design", 50);
+
+	// Length of Hashmap
+	println!("Number of Courses: {}", hashmap.len());
+
+	// Getting a Value using Key
+	match hashmap.get("Web Dev") {
+		Some(val) => println!("Score: {}", val),
+		None => println!("Didn't take the course"),
+	}
+
+	// Removing an Key Value pair
+	hashmap.remove("UX/UI Design");
+
+	// Looping through all the Key Value pairs
+	for (subject, score) in &hashmap {
+		println!("Subject: {}, Score: {}", subject, score);
+	}
+
+	// Checking if to contains a specific key
+	println!("Did you take C++?: {}", hashmap.contains_key("C++"));
+}
+```
+
+[Documentation](https://doc.rust-lang.org/nightly/std/collections/struct.HashMap.html)

@@ -11,16 +11,20 @@ pub fn run() {
     // Length of Hashmap
     println!("Number of Courses: {}", hashmap.len());
 
+    // Getting a Value using Key
     match hashmap.get("Web Dev") {
         Some(val) => println!("Score: {}", val),
         None => println!("Didn't take the course"),
     }
 
+    // Removing an Key Value pair
     hashmap.remove("UX/UI Design");
 
+    // Looping through all the Key Value pairs
     for (subject, score) in &hashmap {
         println!("Subject: {}, Score: {}", subject, score);
     }
 
+    // Checking if to contains a specific key
     println!("Did you take C++?: {}", hashmap.contains_key("C++"));
 }
