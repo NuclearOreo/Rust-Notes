@@ -15,4 +15,5 @@ fn main() {
     example::hashmap_example::run();
     example::random_number_example::run();
     example::string_example::run();
+    example::regex_example::run();
 }

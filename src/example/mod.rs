@@ -8,6 +8,7 @@ pub mod input_example;
 pub mod loop_example;
 pub mod pattern_match_example;
 pub mod random_number_example;
+pub mod regex_example;
 pub mod string_example;
 pub mod traits_example;
 pub mod types_example;
