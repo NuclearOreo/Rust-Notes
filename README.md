@@ -686,7 +686,7 @@ Below is an example code of how to use regrex in rust. Similiar to most langauge
 extern  crate regex;
 use regex::Regex;
 
-pub  fn  run() {
+fn  main() {
 	let re = Regex::new(r"(\w{5})").unwrap();
 	let text =  "dcode";
 
@@ -702,3 +702,38 @@ pub  fn  run() {
 **Note:** To use `captures` you need to wrap your regular expression with paratheses or else it won't work.
 
 [Documentation](https://docs.rs/regex/1.3.6/regex/)
+
+## Modules
+
+Modules are similiar to namespaces in C++. A way to group a butch of functions together by using a keyword `mod`. Pretty simple and straight forward to use.
+
+```rust
+mod some_functions {
+
+	pub  fn  hello_world() {
+		println!("Hello World");
+	}
+
+	pub  fn  adding(x: i32, y: i32) -> i32 {
+		return x + y;
+	}
+
+	pub  mod nested {
+		pub  fn  subtraction(x: i32, y: i32) -> i32 {
+			return x - y;
+		}
+	}
+}
+
+fn  main() {
+
+	some_functions::hello_world();
+
+	let adding_val = some_functions::adding(12, 6);
+	let sub_val = some_functions::nested::subtraction(54, 12);
+
+	println!("{}, {}", adding_val, sub_val);
+}
+```
+
+[Documentation](https://doc.rust-lang.org/rust-by-example/mod.html)
