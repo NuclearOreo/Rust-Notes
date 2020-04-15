@@ -16,4 +16,5 @@ fn main() {
     example::random_number_example::run();
     example::string_example::run();
     example::regex_example::run();
+    example::modules_example::run();
 }
