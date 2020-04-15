@@ -659,3 +659,46 @@ fn  main() {
 ```
 
 [Source](https://github.com/NuclearOreo/Rust-Notes/blob/master/src/example/random_number_example.rs)
+
+## Regular Experssion
+
+Using regular experssion in Rust you have to the same as when using random. Adding it as dependancy in the `Cargo.toml`. Once you have it there you should be ready to go.
+
+- Example `Cargo.toml`
+
+```
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["John Doe <johnDoe@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+regrex = "0.2"
+```
+
+Below is an example code of how to use regrex in rust. Similiar to most langauge and very similiar to python.
+
+- Example Code
+
+```rust
+extern  crate regex;
+use regex::Regex;
+
+pub  fn  run() {
+	let re = Regex::new(r"(\w{5})").unwrap();
+	let text =  "dcode";
+
+	println!("Found Match: {}", re.is_match(text));
+
+	match re.captures(text) {
+	Some(caps) => println!("Found Match: {}", caps.get(0).unwrap().as_str()),
+		None => println!("Could not find the match"),
+	}
+}
+```
+
+**Note:** To use `captures` you need to wrap your regular expression with paratheses or else it won't work.
+
+[Documentation](https://docs.rs/regex/1.3.6/regex/)
