@@ -7,6 +7,7 @@ pub mod impl_example;
 pub mod input_example;
 pub mod loop_example;
 pub mod modules_example;
+pub mod option_examle;
 pub mod pattern_match_example;
 pub mod random_number_example;
 pub mod regex_example;
