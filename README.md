@@ -765,4 +765,4 @@ fn  match_you_met(name: &str) -> Option<bool> {
 }
 ```
 
-[https://doc.rust-lang.org/std/option/enum.Option.html](https://doc.rust-lang.org/std/option/enum.Option.html)
+[Documentation](https://doc.rust-lang.org/std/option/enum.Option.html)
