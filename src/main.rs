@@ -18,4 +18,5 @@ fn main() {
     example::regex_example::run();
     example::modules_example::run();
     example::option_examle::run();
+    example::http_request_example::run();
 }
