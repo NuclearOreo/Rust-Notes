@@ -766,3 +766,52 @@ fn  match_you_met(name: &str) -> Option<bool> {
 ```
 
 [Documentation](https://doc.rust-lang.org/std/option/enum.Option.html)
+
+## Making Requests
+
+There's probably many ways to make request in Rust but I'll be showing you how to do it through `reqwest`. Like any external Rust package you have to add it to the `Cargo.toml` file as a dependancy to use it.
+
+- Example `Cargo.toml`
+
+```
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["John Doe <johnDoe@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+reqwest = "0.8.3"
+```
+
+Here's two ways to make an request using `reqwest`.
+
+- Short Way
+
+```rust
+let response = reqwest::get("https://jsonplaceholder.typicode.com/todos/1")
+	.expect("Failed Request")
+	.text()
+	.expect("Unable to read response");
+```
+
+- Long Way
+
+```rust
+match reqwest::get("https://jsonplaceholder.typicode.com/users/1") {
+	Ok(mut response) => {
+		if response.status().is_success() {
+			match response.text()
+				Ok(text) => println!("{}", text),
+				Err(_) => println!("Unable to read text"),
+			}
+		} else {
+			println!("Status Code wasn't 200")
+		}
+	}
+	Err(_) => println!("Failed Response"),
+}
+```
+
+[Documentation](https://docs.rs/reqwest/0.8.3/reqwest/)
