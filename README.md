@@ -737,3 +737,32 @@ fn  main() {
 ```
 
 [Documentation](https://doc.rust-lang.org/rust-by-example/mod.html)
+
+## Option Enum
+
+The option enum gives you the ability to return a `None` to function that doesn't normally return a `None`. Using the `Option` keyword when defining a function and wrapping the return result with the `Some` keyword will give the ability to return a None from that particular function.
+
+- Example Code
+
+```rust
+fn  main() {
+	println!(
+		"Have you met Johnny: {}",
+		match  match_you_met("Johnny") {
+			Some(o) => o.to_string(),
+			None => "Never seen this name".to_string(),
+		}
+	);
+}
+
+fn  match_you_met(name: &str) -> Option<bool> {
+	match name {
+		"Bob" => Some(true),
+		"John" => Some(false),
+		"Lilly" => Some(true),
+		_ => None,
+	}
+}
+```
+
+[https://doc.rust-lang.org/std/option/enum.Option.html](https://doc.rust-lang.org/std/option/enum.Option.html)
