@@ -14,6 +14,7 @@ pub mod random_number_example;
 pub mod regex_example;
 pub mod running_commands_example;
 pub mod string_example;
+pub mod test_example;
 pub mod traits_example;
 pub mod types_example;
 pub mod vector_example;
