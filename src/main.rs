@@ -19,4 +19,5 @@ fn main() {
     example::modules_example::run();
     example::option_examle::run();
     example::http_request_example::run();
+    example::running_commands_example::run();
 }
