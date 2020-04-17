@@ -815,3 +815,29 @@ match reqwest::get("https://jsonplaceholder.typicode.com/users/1") {
 ```
 
 [Documentation](https://docs.rs/reqwest/0.8.3/reqwest/)
+
+## Running Commands
+
+Running commands in Rust can be easily done with Rust standard library. Use just create the command enum and then arguments to it. After that you can run it.
+
+- Example Code
+
+```rust
+use std::process::Command;
+
+fn  main() {
+	// python demo.py
+	let  mut cmd = Command::new("python");
+	cmd.arg("demo.py");
+
+	match cmd.output() {
+		Ok(o) => unsafe {
+			let output =  String::from_utf8_unchecked(o.stdout);
+			println!("{}", output);
+		},
+		Err(e) => println!("There was an error: {}", e),
+	}
+}
+```
+
+[Documentation](https://doc.rust-lang.org/std/process/struct.Command.html)
