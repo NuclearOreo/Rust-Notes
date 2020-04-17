@@ -841,3 +841,74 @@ fn  main() {
 ```
 
 [Documentation](https://doc.rust-lang.org/std/process/struct.Command.html)
+
+## Running Test
+
+To run tests in Rust you need to use decorators to do so. Serveral decorator to you can when creating tests in Rust so some below. Once you have you decorators set just run the `cargo test` to run the tests.
+
+**Decorators**
+
+- `#[test]` is used to label a function as a test
+- `#[cfg(test)]` is used make sure the test isn't compiled
+- `#[should_panic]` is used to for functions that will panic
+- `#[ignore]` is used to ignore a test
+
+**Example Code**
+
+```rust
+#[allow(dead_code)]
+fn  give_two() -> i32 {
+	return  2;
+}
+
+#[allow(dead_code)]
+struct  Retangle {
+	width: i8,
+	height: i8,
+}
+
+#[allow(dead_code)]
+impl  Retangle {
+	fn  is_square(&self) -> bool {
+		return  self.height ==  self.width;
+	}
+}
+
+#[cfg(test)]
+mod test {
+	#[test]
+	fn  test_basic() {
+		assert!(1  ==  1);
+	}
+
+	#[test]
+	#[ignore]
+	fn  panic() {
+		panic!("I'm panicing");
+	}
+
+	#[test]
+	#[should_panic]
+	fn  should_panic() {
+		panic!("Yes");
+	}
+
+	#[test]
+	fn  test_function() {
+		assert_eq!(super::give_two(), 1  +  1);
+	}
+
+	#[test]
+	fn  test_struct() {
+	let retangle =  super::Retangle {
+		width: 10,
+		height: 5,
+	};
+
+	assert_eq!(retangle.is_square(), false);
+	}
+}
+```
+
+**Note:** To used function outside the module, use can use `super` keyword to access them.
+[Documentation](https://doc.rust-lang.org/book/first-edition/testing.html)

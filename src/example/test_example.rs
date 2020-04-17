@@ -24,6 +24,7 @@ mod test {
     }
 
     #[test]
+    #[ignore]
     fn panic() {
         panic!("I'm panicing");
     }
