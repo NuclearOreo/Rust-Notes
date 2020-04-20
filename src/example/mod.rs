@@ -6,6 +6,7 @@ pub mod hashmap_example;
 pub mod http_request_example;
 pub mod impl_example;
 pub mod input_example;
+pub mod json_parsing_example;
 pub mod loop_example;
 pub mod modules_example;
 pub mod option_examle;

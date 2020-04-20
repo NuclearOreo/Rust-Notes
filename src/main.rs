@@ -20,4 +20,5 @@ fn main() {
     example::option_examle::run();
     example::http_request_example::run();
     example::running_commands_example::run();
+    example::json_parsing_example::run();
 }
