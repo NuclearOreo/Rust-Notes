@@ -912,3 +912,74 @@ mod test {
 
 **Note:** To used function outside the module, use can use `super` keyword to access them.
 [Documentation](https://doc.rust-lang.org/book/first-edition/testing.html)
+
+## JSON Parsing
+
+To parse JSON in Rust, you need to get three packages to do so: `serde`, `serde_json`, and `serde_derive`.
+Add these packages to `Cargo.toml` and run `cargo run` to intall it.
+
+- Cargo.toml
+
+```
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["John Doe <johnDoe@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+```
+
+So there's two main ways to parse JSON using those packages. The first will parse JSON into an array like syntax and the other will parse it into a struct. The code below will show both ways to do it.
+
+```rust
+extern  crate serde;
+#[macro_use]
+extern  crate serde_derive;
+extern  crate serde_json;
+
+use serde_json::Value as JsonValue;
+
+#[derive(Serialize, Deserialize)]
+struct  Person {
+	name: String,
+	age: u8,
+	is_male: bool,
+}
+
+fn  main() {
+let json_string =  r#"
+	{
+		"name": "Ussama",
+		"age": 25,
+		"is_male": true
+	}
+	"#;
+
+	let result1 = serde_json::from_str(json_string);
+	let result2 = serde_json::from_str(json_string);
+
+	if result1.is_ok() {
+	let p: JsonValue = result1.unwrap();
+		println!("The name is {}", p["name"].as_str().unwrap());
+	} else {
+		println!("Can't parse json");
+	}
+
+	if result2.is_ok() {
+	let p: Person = result2.unwrap();
+		println!("The name is {}", p.name);
+	} else {
+		println!("Can't parse json");
+	}
+}
+```
+
+Using `serde_json::from_str` you can parse JSON that's stringified. If the result is a ok you can unwrap the result into a `serde_json::Value` and it will give an array like systax to your result. For the struct version of that you need to unwrap the result into a struct that decoratated with `#[derive(Serialize, Deserialize)]` and then you can access the JSON as a struct. Struct version of it is alot better but takes more setup.
+
+[Documentation](https://github.com/serde-rs/json)
+[Video](https://www.youtube.com/watch?v=hIi_UlyIPMg&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=42)
