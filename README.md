@@ -4,6 +4,35 @@
 
 All rust projects will run from a main function. Just like in C/C++ or Java. Variable in Rust is immutable by default to make them mutable you have use `mut` after the `let` when declaring a varible.
 
+## Jump To
+
+- [Rust CLI](https://github.com/NuclearOreo/Rust-Notes#rust-cli)
+- [Comments](https://github.com/NuclearOreo/Rust-Notes#comments)
+- [Variables / Data Type](https://github.com/NuclearOreo/Rust-Notes#variables--data-types)
+- [Loops](https://github.com/NuclearOreo/Rust-Notes#loops)
+- [Enums Constants Tuples](https://github.com/NuclearOreo/Rust-Notes#enums--constants--tuples)
+- [Function Code-block](https://github.com/NuclearOreo/Rust-Notes#function--code-block)
+- [References / Pointers](https://github.com/NuclearOreo/Rust-Notes#references)
+- [Structs](https://github.com/NuclearOreo/Rust-Notes#structs)
+- [Arrays](https://github.com/NuclearOreo/Rust-Notes#arrays)
+- [Impl Keyword](https://github.com/NuclearOreo/Rust-Notes#impl-keyword)
+- [Strings](https://github.com/NuclearOreo/Rust-Notes#strings)
+- [Triats](https://github.com/NuclearOreo/Rust-Notes#triats)
+- [Vector](https://github.com/NuclearOreo/Rust-Notes#vector)
+- [Read Write to Files](https://github.com/NuclearOreo/Rust-Notes#readwrite-files)
+- [Command Line Argument](https://github.com/NuclearOreo/Rust-Notes#command-line-argument)
+- [Pattern Match](https://github.com/NuclearOreo/Rust-Notes#pattern-match)
+- [Reading Input](https://github.com/NuclearOreo/Rust-Notes#reading-input)
+- [Hashmap](https://github.com/NuclearOreo/Rust-Notes#hashmap)
+- [Random](https://github.com/NuclearOreo/Rust-Notes#random)
+- [Regular Experssion](https://github.com/NuclearOreo/Rust-Notes#regular-experssion)
+- [Modules](https://github.com/NuclearOreo/Rust-Notes#modules)
+- [Option Enum](https://github.com/NuclearOreo/Rust-Notes#option-enum)
+- [Making Web Requests](https://github.com/NuclearOreo/Rust-Notes#making-requests)
+- [Running Commands](https://github.com/NuclearOreo/Rust-Notes#running-commands)
+- [Running Test](https://github.com/NuclearOreo/Rust-Notes#running-test)
+- [JSON Parsing](https://github.com/NuclearOreo/Rust-Notes#json-parsing)
+
 ## Rust CLI
 
 - `cargo init`: Intialize a Cargo project in side a floder
