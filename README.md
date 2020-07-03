@@ -4,9 +4,10 @@
 
 All rust projects will run from a main function. Just like in C/C++ or Java. Variable in Rust is immutable by default to make them mutable you have use `mut` after the `let` when declaring a varible.
 
+All my Leetcode [solutions](./leetcode/leetcode.md) using Rust
+
 ## Jump To
 
-- [Leetcode](./leetcode/leetcode.md)
 - [Rust CLI](https://github.com/NuclearOreo/Rust-Notes#rust-cli)
 - [Comments](https://github.com/NuclearOreo/Rust-Notes#comments)
 - [Variables / Data Type](https://github.com/NuclearOreo/Rust-Notes#variables--data-types)
