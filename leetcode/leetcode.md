@@ -8,6 +8,10 @@ stuck anywhere I come back here to refresh my memory.
 
 - [1031. Maximum Sum of Two Non-Overlapping Subarrays](./MaximumSumofTwoNon-OverlappingSubarrays.md)
 
+## Stack Problems
+
+- [394. Decode String](./DecodeString.md)
+
 ## Greedy Problems
 
 - [1296. Divide Array in Sets of K Consecutive Numbers](./DivideArrayinSetsofKConsecutiveNumbers.md)
