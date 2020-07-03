@@ -6,6 +6,7 @@ All rust projects will run from a main function. Just like in C/C++ or Java. Var
 
 ## Jump To
 
+- [Leetcode](./leetcode/leetcode.md)
 - [Rust CLI](https://github.com/NuclearOreo/Rust-Notes#rust-cli)
 - [Comments](https://github.com/NuclearOreo/Rust-Notes#comments)
 - [Variables / Data Type](https://github.com/NuclearOreo/Rust-Notes#variables--data-types)
