@@ -15,3 +15,7 @@ stuck anywhere I come back here to refresh my memory.
 ## Greedy Problems
 
 - [1296. Divide Array in Sets of K Consecutive Numbers](./DivideArrayinSetsofKConsecutiveNumbers.md)
+
+## Sliding Window Problems
+
+- [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](./LongestContinuousSubarrayWithAbsoluteDiffLessThanorEqualtoLimit.md)
