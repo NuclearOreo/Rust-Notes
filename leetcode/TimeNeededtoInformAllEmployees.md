@@ -77,6 +77,8 @@ Output: 1076
 
 ## My Rust Solution
 
+**Version 1**
+
 ```rust
 impl Solution {
     pub fn num_of_minutes(n: i32, head_id: i32, manager: Vec<i32>, inform_time: Vec<i32>) -> i32 {
@@ -104,5 +106,26 @@ impl Solution {
 
         return inform_time[id as usize];
     }
+}
+```
+
+**Version 2**
+
+```rust
+impl Solution {
+  pub fn num_of_minutes(n: i32, head_id: i32, mut manager: Vec<i32>, mut inform_time: Vec<i32>) -> i32 {
+      (0..n)
+      .map(|i| Self::dfs(i as usize, &mut manager, &mut inform_time))
+      .max()
+      .unwrap()
+  }
+
+  fn dfs(i: usize, m: &mut Vec<i32>, t: &mut Vec<i32>) -> i32 {
+    if m[i] != -1 {
+      t[i] += Self::dfs(m[i] as usize, m, t);
+      m[i] = -1;
+    }
+    t[i]
+  }
 }
 ```
