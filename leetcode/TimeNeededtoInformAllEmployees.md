@@ -83,28 +83,28 @@ Output: 1076
 impl Solution {
     pub fn num_of_minutes(n: i32, head_id: i32, manager: Vec<i32>, inform_time: Vec<i32>) -> i32 {
         let mut childern: Vec<Vec<i32>> = vec![ vec![]; n as usize];
-
+        
         for (id, m) in manager.iter().enumerate() {
             if *m >= 0 {
                 childern[*m as usize].push(id as i32);
             }
         }
-
-        return Self::dfs(head_id, &childern, &inform_time);
+        
+        return Self::dfs(head_id as usize, &childern, &inform_time);
     }
-
-    pub fn dfs(id: i32, childern: &Vec<Vec<i32>>, inform_time: &Vec<i32>) -> i32 {
+    
+    pub fn dfs(id: usize, childern: &Vec<Vec<i32>>, inform_time: &Vec<i32>) -> i32 {
         let mut times: Vec<i32> = vec![];
-
-        for child in childern[id as usize].iter() {
-            times.push(Self::dfs(*child, &childern, &inform_time));
+        
+        for child in childern[id].iter() {
+            times.push(Self::dfs(*child as usize, &childern, &inform_time));
         }
-
+        
         if times.iter().max() != None {
-            return times.iter().max().unwrap() + inform_time[id as usize];
+            return times.iter().max().unwrap() + inform_time[id];
         }
-
-        return inform_time[id as usize];
+        
+        return inform_time[id];
     }
 }
 ```

@@ -23,3 +23,7 @@ stuck anywhere I come back here to refresh my memory.
 ## Graph Problems
 
 - [1376. Time Needed to Inform All Employees](./TimeNeededtoInformAllEmployees.md)
+
+## Dynamic Programming
+
+- [375. Guess Number Higher or Lower II](./GuessNumberHigherorLowerII.md)
