@@ -6,7 +6,7 @@ I pick a number from **1** to **n**. You have to guess which number I picked.
 
 Every time you guess wrong, I'll tell you whether the number I picked is higher or lower.
 
-However, when you guess a particular number x, and you guess wrong, you pay **$x**. You win the game when you guess the number I picked.
+However, when you guess a particular number x, and you guess wrong, you pay **\$x**. You win the game when you guess the number I picked.
 
 **Example:**
 
@@ -29,30 +29,30 @@ Given a particular **n ≥ 1**, find out how much money you need to have to guar
 ```rust
 impl Solution {
     pub fn get_money_amount(n: i32) -> i32 {
-        let n = n as usize; 
-        let mut table = vec![ vec![0; n + 1 ]; n + 1];
-        
-        return Self::dp(1, n, &mut table);
+        let n = n as usize + 1;
+        let mut dp = vec![ vec![0; n ]; n ];
+
+        return Self::dfs(1, n - 1, &mut dp);
     }
-    
-    pub fn dp(start: usize, end: usize, table: &mut Vec<Vec<i32>>) -> i32 {
+
+    pub fn dfs(start: usize, end: usize, dp: &mut Vec<Vec<i32>>) -> i32 {
         if start >= end {
             return 0;
         }
-        
-        if table[start][end] != 0{
-            return table[start][end];
+
+        if dp[start][end] != 0{
+            return dp[start][end];
         }
-        
+
         let mut res = i32::max_value();
         for i in start..(end + 1) {
             let amt = i as i32;
-            let tmp = amt + Self::dp(i + 1, end, table).max(Self::dp(start, i - 1, table));
+            let tmp = amt + Self::dfs(i + 1, end, dp).max(Self::dfs(start, i - 1, dp));
             res = res.min(tmp);
         }
-        
-        table[start][end] = res;
-        
+
+        dp[start][end] = res;
+
         return res;
     }
 }
