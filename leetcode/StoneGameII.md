@@ -36,7 +36,6 @@ use std::cmp::max;
 impl Solution {
     pub fn stone_game_ii(mut piles: Vec<i32>) -> i32 {
         let n = piles.len();
-
         let mut dp: HashMap<(usize, usize), i32> = HashMap::new();
 
         for i in 1..n {
