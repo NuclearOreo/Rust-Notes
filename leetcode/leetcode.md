@@ -27,3 +27,4 @@ stuck anywhere I come back here to refresh my memory.
 ## Dynamic Programming
 
 - [375. Guess Number Higher or Lower II](./GuessNumberHigherorLowerII.md)
+- [1140. Stone Game II](./StoneGameII.md)
