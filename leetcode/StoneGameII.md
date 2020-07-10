@@ -30,8 +30,6 @@ In this case, Alex get 2 + 7 = 9 piles in total. So we return 10 since it's larg
 
 ```rust
 use std::collections::HashMap;
-use std::cmp::min;
-use std::cmp::max;
 
 impl Solution {
     pub fn stone_game_ii(mut piles: Vec<i32>) -> i32 {
@@ -56,16 +54,16 @@ impl Solution {
 
         let mut res = 0;
 
-        for x in 1..min(2 * m + 1, n - i + 1) {
+        for x in 1..(2 * m + 1).min(n - i + 1) {
             let mut val1 = 0;
 
             if i > 0 {
                 val1 = piles[i - 1];
             }
 
-            let val2 = Self::dfs(piles, i + x, max(m, x), n, dp);
+            let val2 = Self::dfs(piles, i + x, m.max(x), n, dp);
 
-            res = max(res, piles[n - 1] - val1 - val2);
+            res = res.max(piles[n - 1] - val1 - val2);
         }
 
         dp.insert((i, m), res);
