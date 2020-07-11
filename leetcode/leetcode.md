@@ -16,6 +16,10 @@ stuck anywhere I come back here to refresh my memory.
 
 - [394. Decode String](./DecodeString.md)
 
+## Sliding Window Problem
+
+- [1423. Maximum Points You Can Obtain from Cards](./MaximumPointsYouCanObtainfromCards.md)
+
 ## Greedy Problems
 
 - [1296. Divide Array in Sets of K Consecutive Numbers](./DivideArrayinSetsofKConsecutiveNumbers.md)
