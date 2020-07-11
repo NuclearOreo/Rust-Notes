@@ -58,9 +58,9 @@ Output: 202
 ```rust
 impl Solution {
     pub fn max_score(card_points: Vec<i32>, k: i32) -> i32 {
-        let subArr = &card_points[0..k as usize];
-        let mut sum: i32 = subArr.iter().sum();
         let (K, n) = (k as usize, card_points.len());
+        let subArr = &card_points[..K];
+        let mut sum: i32 = subArr.iter().sum();
         let mut res = sum;
 
         for i in 1..(K + 1) {
