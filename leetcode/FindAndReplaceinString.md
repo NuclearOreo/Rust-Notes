@@ -15,7 +15,7 @@ All these operations occur simultaneously. It's guaranteed that there won't be a
 ```
 Input: S = "abcd", indexes = [0,2], sources = ["a","cd"], targets = ["eee","ffff"]
 Output: "eeebffff"
-**Explanation:** "a" starts at index 0 in S, so it's replaced by "eee".
+Explanation: "a" starts at index 0 in S, so it's replaced by "eee".
 "cd" starts at index 2 in S, so it's replaced by "ffff".
 ```
 
