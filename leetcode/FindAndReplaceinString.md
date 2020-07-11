@@ -21,7 +21,7 @@ Explanation: "a" starts at index 0 in S, so it's replaced by "eee".
 
 **Example 2:**
 
-```md
+```
 Input: S = "abcd", indexes = [0,2], sources = ["ab","ec"], targets = ["eee","ffff"]
 Output: "eeecd"
 Explanation: "ab" starts at index 0 in S, so it's replaced by "eee".
