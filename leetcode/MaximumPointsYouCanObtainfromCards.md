@@ -52,3 +52,23 @@ Output: 202
 - `1 <= cardPoints.length <= 10^5`
 - `1 <= cardPoints[i] <= 10^4`
 - `1 <= k <= cardPoints.length`
+
+## My Rust Solution
+
+```rust
+impl Solution {
+    pub fn max_score(card_points: Vec<i32>, k: i32) -> i32 {
+        let subArr = &card_points[0..k as usize];
+        let mut sum: i32 = subArr.iter().sum();
+        let (K, n) = (k as usize, card_points.len());
+        let mut res = sum;
+
+        for i in 1..(K + 1) {
+            sum += card_points[n - i] - card_points[K - i];
+            res = res.max(sum);
+        }
+
+        return res;
+    }
+}
+```
