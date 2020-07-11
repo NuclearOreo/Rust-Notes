@@ -8,6 +8,10 @@ stuck anywhere I come back here to refresh my memory.
 
 - [1031. Maximum Sum of Two Non-Overlapping Subarrays](./MaximumSumofTwoNon-OverlappingSubarrays.md)
 
+## String Problems
+
+- [833. Find And Replace in String](./FindAndReplaceinString.md)
+
 ## Stack Problems
 
 - [394. Decode String](./DecodeString.md)
@@ -24,7 +28,7 @@ stuck anywhere I come back here to refresh my memory.
 
 - [1376. Time Needed to Inform All Employees](./TimeNeededtoInformAllEmployees.md)
 
-## Dynamic Programming
+## Dynamic Programming Problems
 
 - [375. Guess Number Higher or Lower II](./GuessNumberHigherorLowerII.md)
 - [1140. Stone Game II](./StoneGameII.md)
