@@ -15,6 +15,7 @@ stuck anywhere I come back here to refresh my memory.
 ## Stack Problems
 
 - [394. Decode String](./DecodeString.md)
+- [84. Largest Rectangle in Histogram](./LargestRectangleinHistogram.md)
 
 ## Sliding Window Problem
 
