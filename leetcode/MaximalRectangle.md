@@ -30,12 +30,12 @@ impl Solution {
         for row in matrix.iter() {
             for (i, val) in row.iter().enumerate() {
                 if *val == '0' {
-                    histogram[i + 1] = val.to_digit(10).unwrap() as i32;
+                    histogram[i + 1] = 0;
                 } else {
-                    histogram[i + 1] += val.to_digit(10).unwrap() as i32;
+                    histogram[i + 1] += 1;
                 }
             }
-            res = res.max(Self::maxInHistogram(&histogram))
+            res = res.max(Self::maxInHistogram(&histogram));
         }
 
         return res;
