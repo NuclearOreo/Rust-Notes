@@ -15,7 +15,7 @@ Input:
 Output: 6
 ```
 
-# My Rust Solution
+## My Rust Solution
 
 ```rust
 impl Solution {
