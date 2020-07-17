@@ -11,6 +11,7 @@ stuck anywhere I come back here to refresh my memory.
 ## String Problems
 
 - [833. Find And Replace in String](./FindAndReplaceinString.md)
+- [722. Remove Comments](./RemoveComments.md)
 
 ## Stack Problems
 
