@@ -19,6 +19,10 @@ stuck anywhere I come back here to refresh my memory.
 - [84. Largest Rectangle in Histogram](./LargestRectangleinHistogram.md)
 - [85. Maximal Rectangle](./MaximalRectangle.md)
 
+## Binary Search
+
+- [1060. Missing Element in Sorted Array](./MissingElementinSortedArray.md)
+
 ## Sliding Window Problem
 
 - [1423. Maximum Points You Can Obtain from Cards](./MaximumPointsYouCanObtainfromCards.md)
