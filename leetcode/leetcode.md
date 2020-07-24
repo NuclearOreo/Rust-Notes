@@ -43,3 +43,4 @@ stuck anywhere I come back here to refresh my memory.
 
 - [375. Guess Number Higher or Lower II](./GuessNumberHigherorLowerII.md)
 - [1140. Stone Game II](./StoneGameII.md)
+- [1477. Find Two Non-overlapping Sub-arrays Each With Target Sum](./FindTwoNon-overlappingSub-arraysEachWithTargetSum.md)
