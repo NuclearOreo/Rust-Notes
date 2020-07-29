@@ -12,6 +12,7 @@ stuck anywhere I come back here to refresh my memory.
 
 - [833. Find And Replace in String](./FindAndReplaceinString.md)
 - [722. Remove Comments](./RemoveComments.md)
+- [1529. Bulb Switcher IV](./bulb-switcher-iv.md)
 
 ## Stack Problems
 
