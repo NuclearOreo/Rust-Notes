@@ -7,6 +7,7 @@ stuck anywhere I come back here to refresh my memory.
 ## Array Problems
 
 - [1031. Maximum Sum of Two Non-Overlapping Subarrays](./MaximumSumofTwoNon-OverlappingSubarrays.md)
+- [1535. Find the Winner of an Array Game](./find-the-winner-of-an-array-game.md)
 
 ## String Problems
 
