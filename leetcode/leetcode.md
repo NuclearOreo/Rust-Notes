@@ -20,6 +20,7 @@ stuck anywhere I come back here to refresh my memory.
 - [394. Decode String](./DecodeString.md)
 - [84. Largest Rectangle in Histogram](./LargestRectangleinHistogram.md)
 - [85. Maximal Rectangle](./MaximalRectangle.md)
+- [1544. Make The String Great](./make-the-string-great.md)
 
 ## Binary Search
 
