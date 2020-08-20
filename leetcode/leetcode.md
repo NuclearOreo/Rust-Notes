@@ -45,6 +45,7 @@ stuck anywhere I come back here to refresh my memory.
 ## Graph Problems
 
 - [1376. Time Needed to Inform All Employees](./TimeNeededtoInformAllEmployees.md)
+- [444. Sequence Reconstruction](./sequence-reconstruction.md)
 
 ## Dynamic Programming Problems
 
