@@ -9,6 +9,10 @@ stuck anywhere I come back here to refresh my memory.
 - [1031. Maximum Sum of Two Non-Overlapping Subarrays](./MaximumSumofTwoNon-OverlappingSubarrays.md)
 - [1535. Find the Winner of an Array Game](./find-the-winner-of-an-array-game.md)
 
+## Sorting Problems
+
+- [1561. Maximum Number of Coins You Can Get](./maximum-number-of-coins-you-can-get.md)
+
 ## String Problems
 
 - [833. Find And Replace in String](./FindAndReplaceinString.md)
