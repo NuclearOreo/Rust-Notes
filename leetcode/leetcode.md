@@ -8,6 +8,7 @@ stuck anywhere I come back here to refresh my memory.
 
 - [1031. Maximum Sum of Two Non-Overlapping Subarrays](./MaximumSumofTwoNon-OverlappingSubarrays.md)
 - [1535. Find the Winner of an Array Game](./find-the-winner-of-an-array-game.md)
+- [1566. Detect Pattern of Length M Repeated K or More Times](./detect-pattern-of-length-m-repeated-k-or-more-times.md)
 
 ## Sorting Problems
 
